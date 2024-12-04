@@ -98,7 +98,7 @@ const BuildSlugButton = ({ ctx }: PropsType) => {
 
     return `
     query {
-      ${itemApiKey}(locale: ${locale}, filter: { id: { eq: ${itemId}} }) {
+      ${itemApiKey}(locale: ${locale}, filter: { id: { eq: "${itemId}" } }) {
        ${getPageParams}
         parent {
           ${getPageParams}
